@@ -102,19 +102,31 @@ main {
     color: $primaryColor;
   }
 
+  // end h1
+
   h2 {
     font-size: 1.2rem;
     margin: 1.1rem 0 .2rem 0;
     color: lighten($primaryColor, 20%);
   }
 
-  // end h1
+  // end h2
 
   div.parent {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: .5rem;
+  }
+  div.parent article {
+    background-color: #eee;
+  }
+  div.parent article:nth-child(1){
+    grid-column: 1 / span 2;
+    //background-color: orange;
   }
 
+  // module 2 styles
   ul li {
     height: 50px;
     width: 50px;
