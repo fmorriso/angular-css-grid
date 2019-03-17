@@ -1,0 +1,6 @@
+<div>
+<a  *ngFor="let link of links" [routerLink]="link.path" [routerLinkActive]="['mat-button-toggle-checked', 'active-route']"
+   #rla="routerLinkActive">
+  {{link.label}}
+</a>
+</div>

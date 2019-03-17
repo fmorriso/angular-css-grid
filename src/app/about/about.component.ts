@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AngularVersionInformationService} from '../shared/angular-version-information.service';
 
 @Component({
   selector: 'app-about',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  angularVersion: string;
+  constructor(private ngVersion: AngularVersionInformationService) { }
 
   ngOnInit() {
+    this.angularVersion = this.ngVersion.versionFull;
   }
 
 }

@@ -6,9 +6,9 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'module02', component: Module02Component },
-  { path: 'about', component: AboutComponent },
+  { path: 'home', component: HomeComponent, data: {label: 'Home'} },
+  { path: 'module02', component: Module02Component, data: {label: 'Module02'} },
+  { path: 'about', component: AboutComponent, data: {label: 'About'} },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
