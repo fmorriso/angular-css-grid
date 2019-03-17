@@ -94,7 +94,12 @@ main {
 		color: $primaryColor;
 	} // end h1
 	
-	
+	ul li {
+    height: 50px;
+    width: 50px;
+    background-image: url(assets/SpritePractice.png);
+    background-position: 0 0;
+  }
     
     
     
