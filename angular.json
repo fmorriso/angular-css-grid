@@ -75,6 +75,18 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "development" : {
+              "optimization": false,
+              "outputHashing": "none",
+              "sourceMap": true,
+              "extractCss": true,
+              "namedChunks": true,
+              "aot": false,
+              "extractLicenses": true,
+              "vendorChunk": true,
+              "commonChunk": true,
+              "buildOptimizer": false
             }
           }
         },
@@ -86,6 +98,10 @@
           "configurations": {
             "production": {
               "browserTarget": "angular-css-grid:build:production"
+            },
+            "development": {
+              "browserTarget": "angular-css-grid:build:development"
+
             }
           }
         },
