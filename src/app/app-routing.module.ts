@@ -17,7 +17,7 @@ const routeOptions: ExtraOptions = {
 };
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, routeOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
