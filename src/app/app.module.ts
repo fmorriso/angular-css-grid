@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { GridUsingCSSComponent } from './grid-using-css/grid-using-css.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     PageNotFoundComponent,
     AboutComponent,
     HomeComponent,
-    NavigationComponent
+    NavigationComponent,
+    GridUsingCSSComponent
   ],
   imports: [
     BrowserModule,
